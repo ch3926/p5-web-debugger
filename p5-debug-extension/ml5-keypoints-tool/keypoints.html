@@ -5,19 +5,23 @@
         <meta charset="utf-8">
         <script src="p5.js"></script>
         <script src="script.js"></script>
-        <link rel="stylesheet" href="sandbox.css">
+        <link rel="stylesheet" href="/sandbox.css">
+        <link rel="stylesheet" href="keypoints.css">
     </head>
     <body>
         <header>
-            <a href="index.html">Debug Tools</a>
+            <a href="/index.html">Debug Tools</a>
             <a href="keypoints.html">ml5 Keypoints Tool</a>
         </header>
         <h1>ml5 Keypoints Tool</h1>
-        <input type="text" id="variable-input" placeholder="Variable Name">
-        <div class="buttons">
-            <button id="submit-btn">Highlight</button> 
-            <button id="run-sketch-btn">Run Sketch Here</button>
-        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+              <a href="#">PoseNet</a>
+              <a href="#">HandPose</a>
+              <a href="#">FaceApi</a>
+            </div>
+          </div>
 
         <iframe src="sandbox.html" id="sandbox"  style="width: 700px; height: 450px"></iframe>
     </body>
